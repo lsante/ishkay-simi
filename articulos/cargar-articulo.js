@@ -1,18 +1,6 @@
 // Carga el contenido de un artículo desde un archivo de puro texto
 // y lo inserta en la plantilla visual. Así, para editar un artículo
 // solo hay que tocar el archivo .txt (sin ninguna etiqueta de código).
-//
-// FORMATO DEL ARCHIVO .txt:
-//
-//   titulo: Título del artículo
-//   tema: Categoría del artículo
-//   autoras: Nombre de las autoras
-//   ===
-//   (texto en quechua, párrafos separados por una línea en blanco)
-//   ## Un subtítulo se escribe así
-//   (más párrafos...)
-//   ===
-//   (texto en castellano, misma lógica)
 
 function escaparHtml(texto) {
   return texto
@@ -43,7 +31,8 @@ async function cargarArticulo(config) {
   const metaAutoras = document.getElementById("meta-autoras");
 
   try {
-    const respuesta = await fetch(config.fuente);
+    const url = config.fuente + "?v=" + Date.now();
+    const respuesta = await fetch(url, { cache: "no-store" });
     if (!respuesta.ok) throw new Error("No se encontró el archivo de contenido");
     const texto = await respuesta.text();
 
