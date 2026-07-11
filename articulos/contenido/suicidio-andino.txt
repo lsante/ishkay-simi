@@ -1,0 +1,17 @@
+titulo: Wañuyta munay: la idea del suicidio en el mundo andino
+tema: Salud mental · Cosmovisión andina
+autoras: Gina Maldonado & Loreto
+===
+[Aquí va el texto en quechua. Reemplaza este párrafo de ejemplo por el contenido real del artículo sobre la idea del suicidio en el mundo andino.]
+
+[Segundo párrafo de ejemplo en quechua.]
+
+## [Subtítulo, por ejemplo un concepto quechua clave]
+[Más contenido de ejemplo en quechua.]
+===
+[Aquí va el texto en castellano. Reemplaza este párrafo de ejemplo por el contenido real del artículo.]
+
+[Segundo párrafo de ejemplo en castellano.]
+
+## [Subtítulo correspondiente]
+[Más contenido de ejemplo en castellano.]
